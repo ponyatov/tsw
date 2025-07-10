@@ -424,6 +424,14 @@ let ts:unit = //
     "exclude": ["node_modules"]
 }
 """)
+    File.WriteAllText ("tslint.json","""{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended"],
+    "jsRules": {},
+    "rules": {},
+    "rulesDirectory": []
+}
+""")
     // npm i -g deno typescript tslint
     // npm i --save-dev @types/node
 
