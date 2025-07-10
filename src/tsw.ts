@@ -31,7 +31,5 @@ let c = a + b; // any
 
 console.log({ x: Symbol('z') });
 
-let d = {
-    b: 'x',
-};
-console.log(d.b);
+let d: { b: number; c?: string } = { b: 123 };
+console.log(d);
