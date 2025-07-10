@@ -3,3 +3,4 @@
 // console.log(add);
 var obj = {};
 console.log(obj);
+//# sourceMappingURL=tsw.js.map
