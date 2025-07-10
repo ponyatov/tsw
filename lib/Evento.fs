@@ -401,7 +401,8 @@ let package:unit = //
     \"main\"        : \"src/{app}.ts\",
     \"directories\" : {{ \"doc\": \"doc\", \"src\": \"src\" }},
     \"scripts\": {{
-        \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"
+        \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",
+        \"lint\": \"tslint -p tsconfig.json\"
     }},
     \"author\": \"{AUTHOR} <{EMAIL}>\",
     \"license\": \"{LICENSE}\"
