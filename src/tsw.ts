@@ -7,9 +7,11 @@
 console.log('Hello TypeScript!');
 
 // types:
-// - boolean = Boolean
-// - number = Number
-// - string = String
+// - boolean
+// - number max:2^53
+//   - bigint
+// - string
+// - any / unknown
 
 function squareOf(n: number) {
     return n * n;
@@ -17,3 +19,19 @@ function squareOf(n: number) {
 console.log(squareOf(2));
 console.log(squareOf(1.1));
 // console.log(squareOf('z'));
+
+let a: any = 666; // any
+let b: any = ['danger']; // any
+let c = a + b; // any
+
+// function add(a: unknown, b: unknown) {
+//     return a + b;
+// }
+// console.log(add(2, 3));
+
+console.log({ x: Symbol('z') });
+
+let d = {
+    b: 'x',
+};
+console.log(d.b);

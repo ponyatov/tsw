@@ -8,6 +8,7 @@
         "lib"      : ["ES2015.Core","DOM"],
         "newLine"  :  "lf",
         "removeComments": true,
+        "noImplicitAny": true,
     },
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules"]
