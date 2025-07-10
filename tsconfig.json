@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "none",        // Module system
+        "target": "es5",         // JavaScript version to compile to
+        "strict": true,          // Enable strict type checking
+        "outDir": "./static",    // Output directory
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
