@@ -6,7 +6,8 @@
         "outDir"   :  "./static",           // Output directory
         "sourceMap":  true,
         "lib"      : ["ES2015.Core","DOM"],
-        // "esModuleInterop": true
+        "newLine"  :  "lf",
+        "removeComments": true,
     },
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules"]

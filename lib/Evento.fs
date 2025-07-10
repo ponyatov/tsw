@@ -411,10 +411,14 @@ let package:unit = //
 let ts:unit = //
     File.WriteAllText ("tsconfig.json","""{
     "compilerOptions": {
-        "module": "none",        // Module system
-        "target": "es5",         // JavaScript version to compile to
-        "strict": true,          // Enable strict type checking
-        "outDir": "./static",    // Output directory
+        "module"   :  "CommonJS",           // Module system
+        "target"   :  "ES5",                // JavaScript version to compile to
+        "strict"   :  true,                 // Enable strict type checking
+        "outDir"   :  "./static",           // Output directory
+        "sourceMap":  true,
+        "lib"      : ["ES2015.Core","DOM"],
+        "newLine"  :  "lf",
+        "removeComments": true,
     },
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules"]
