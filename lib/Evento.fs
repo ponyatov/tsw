@@ -420,6 +420,7 @@ let ts:unit = //
     "exclude": ["node_modules"]
 }
 """)
-    // npm i -g deno typescript
+    // npm i -g deno typescript tslint
+    // npm i --save-dev @types/node
 
 COMMIT
